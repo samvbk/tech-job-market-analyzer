@@ -1,0 +1,31 @@
+version: 2
+
+sources:
+  - name: raw_data
+    database: tech-job-market-analyzer
+    schema: tech_job_market_data
+    tables:
+      - name: external_raw_jobs
+
+models:
+  - name: stg_jobs
+    description: "Staging model for raw jobs"
+    columns:
+      - name: job_id
+        description: "Primary key for a job posting"
+        tests:
+          - unique
+          - not_null
+      - name: query_keyword
+        description: "The term used to search for the job."
+
+  - name: fact_job_postings
+    description: "Fact table for job postings, including parsed skills and salary."
+    columns:
+      - name: job_id
+        description: "Primary key"
+        tests:
+          - unique
+          - not_null
+      - name: requires_python
+        description: "Boolean indicating if Python is mentioned in the job description."

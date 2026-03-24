@@ -1,0 +1,16 @@
+version: '3'
+services:
+  mage:
+    image: mageai/mageai:latest
+    command: mage start tech_job_pipeline
+    env_file:
+      - .env
+    environment:
+      USER_CODE_PATH: /home/src/tech_job_pipeline
+      GOOGLE_APPLICATION_CREDENTIALS: /home/src/keys/gcp-key.json
+    ports:
+      - 6789:6789
+    volumes:
+      - ./mage_data:/home/src/
+      - D:/Games/Project/data-engineering-project/JSON-key/tech-job-market-analyzer-f4d61f1879fb.json:/home/src/keys/gcp-key.json
+    restart: on-failure:5

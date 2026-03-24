@@ -1,0 +1,31 @@
+# OS / IDE
+.DS_Store
+.vscode/
+.idea/
+
+# Secrets
+.env
+JSON-key/
+*.json
+!dbt_project/**/*.json
+
+# Python
+__pycache__/
+*.py[cod]
+*venv*/
+dbt_project/dbt-env/
+
+# Terraform
+terraform/.terraform/
+terraform/*.tfstate
+terraform/*.tfstate.backup
+terraform/.terraform.lock.hcl
+
+# Mage
+mage_data/**/*.db
+mage_data/**/logs/
+
+# dbt
+dbt_project/target/
+dbt_project/dbt_packages/
+dbt_project/logs/

@@ -1,0 +1,13 @@
+tech_job_profile:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      project: tech-job-market-analyzer
+      dataset: tech_job_market_data
+      threads: 4
+      # Point directly to the JSON key saved previously
+      keyfile: D:/Games/Project/data-engineering-project/JSON-key/tech-job-market-analyzer-f4d61f1879fb.json
+      location: us-central1
+      priority: interactive
