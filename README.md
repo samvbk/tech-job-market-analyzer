@@ -4,7 +4,7 @@ An end-to-end Data Engineering capstone project designed to automatically scrape
 
 ## 🏗️ Architecture
 
-!Architecture Diagram!
+Architecture Diagram
 <img width="2816" height="1536" alt="worlflow" src="https://github.com/user-attachments/assets/8b4fa227-3a28-4bbf-8f16-1c3ddf29f223" />
 
 
