@@ -36,6 +36,8 @@ Architecture Diagram
    * Create an `.env` file at the root with your RapidAPI key: `RAPIDAPI_KEY=your_key`
    * Run `docker compose up -d` to spin up Mage.
    * Open `http://localhost:6789`, create a scheduled pipeline, and paste the Python blocks located in the `/scripts` directory.
+  <img width="1917" height="873" alt="Screenshot 2026-03-26 114526" src="https://github.com/user-attachments/assets/1bef1166-3ed3-4ea5-a357-b1e293235a12" />
+
 
 3. **dbt Transformations**
    * Navigate to the `dbt_project/` folder.
