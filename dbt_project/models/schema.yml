@@ -29,3 +29,9 @@ models:
           - not_null
       - name: requires_python
         description: "Boolean indicating if Python is mentioned in the job description."
+
+  - name: stg_stackoverflow_tags
+    description: "Staging model for daily Stack Overflow tag counts."
+
+  - name: fact_tech_synergy
+    description: "Joins job counts with Stack Overflow interest tags."

@@ -22,7 +22,7 @@ An end-to-end Data Engineering capstone project designed to automatically scrape
 2. **Load (Data Lake):** Orchestrated by Mage, raw data is pushed into a GCS bucket partitioned by execution date using PyArrow in Parquet format.
 3. **Load (Data Warehouse):** Mage runs a script to mount the GCS lake as an external BigQuery table with Hive partitioning.
 4. **Transform:** A containerized dbt project executes on BigQuery, cleaning data in a `staging` layer and building a `fact_job_postings` table that uses BigQuery Regex to extract tech skills (Python, SQL, AWS, Airflow, dbt, etc.) from the descriptions.
-5. **Serve:** A Looker Studio dashboard connected directly to the analytics-ready `fact_job_postings` table.
+5. **Big Data Synergy:** A new module that pulls 1M+ rows of Stack Overflow tag trends (2019-Present) from a BigQuery Public Dataset. This allows for correlation between "What developers are talking about" vs "What companies are hiring for."
 
 ## 🚀 Setup Instructions
 
