@@ -37,12 +37,14 @@ Architecture Diagram
    * Run `docker compose up -d` to spin up Mage.
    * Open `http://localhost:6789`, create a scheduled pipeline, and paste the Python blocks located in the `/scripts` directory.
   <img width="1917" height="873" alt="Screenshot 2026-03-26 114526" src="https://github.com/user-attachments/assets/1bef1166-3ed3-4ea5-a357-b1e293235a12" />
-
+   *Architecture diagram : RapidAPI -> Mage -> GCS -> BigQuery -> dbt -> Looker*
 
 3. **dbt Transformations**
    * Navigate to the `dbt_project/` folder.
    * Install BigQuery adapter: `pip install dbt-bigquery`
    * Run models: `dbt build --profiles-dir .`
+<img width="1919" height="1021" alt="Screenshot 2026-03-26 123736" src="https://github.com/user-attachments/assets/084fb696-9640-4b86-94ca-49d7be8d7e54" />
+   *Figure: Successful execution of dbt models and data tests in the terminal.*
 
 ## 💡 Top Metrics Visualized
 - Top In-Demand Tech Skills
